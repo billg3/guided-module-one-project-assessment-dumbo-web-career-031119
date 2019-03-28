@@ -21,11 +21,11 @@ def self.update_doc_review
   puts "Amazing, now what doctor review by id would you like to update"
   docs_id = gets.chomp.to_i
 
-  Review.find_by(doctor_id:docs_id)
+  rev = Review.find_by(doctor_id:docs_id)
 
     puts "okay, rate from 1-5 stars"
     new_star = gets.chomp.to_i
-    Review.update(docs_id, stars: new_star)
+    rev.update(stars: new_star)
 end
 
 # #perhaps???

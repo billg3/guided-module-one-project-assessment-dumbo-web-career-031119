@@ -9,14 +9,12 @@ end
 
 
 def run
-
   greeting
-
   name = gets.chomp
-
   #c
   userabc = User.create(name: name)
-  puts "Awesome, what would you like to do ---"
+
+  # puts "Awesome, what would you like to do ---"
 
   # #TTY CRUD interface ---
   # case object
@@ -34,9 +32,11 @@ def run
   # gets.chomp
 
 #r
-  puts "Wonderful, now, which doctor would you like to review"
-  doctor_name = gets.chomp
-  Doctor.read_doc(doctor_name)
+  #puts "Wonderful, now, which doctor would you like to review"
+  # doctor_name = gets.chomp
+  # Doctor.read_doc(doctor_name)
+
+  puts Doctor.show_a_doc
 
   ##now has review object
   ##Doctor.find_by(name: doctor_name)

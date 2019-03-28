@@ -6,6 +6,9 @@ class User < ActiveRecord::Base
 end
 
 
+
+
+
     #maybe?
     #  ends
     #end

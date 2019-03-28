@@ -1,0 +1,38 @@
+###tty
+
+principles
+
+idk
+
+###active record is a object relational mapper,
+###meaning, it's a connecting translating adapter for ruby to sql
+in order to make databases with rows and those rows into instance variables for the class they are inherit
+allows us to abstract powerful methods
+don't have to write accessors, methods, and initializers for instances so that class's can access them
+by allowing the active record gem write them for us
+interpreter between sql database language and the ruby language
+writes methods for database rows via Ruby objects
+Link a Student "model" to the database table students
+Ruby understands objects. The database understands raw data.
+associations b/w models and their analogous database tables without having to write tons of code.
+via migration files
+join model combines tables
+macros method that writes code for us (think metaprogramming).
+tell the review class that it will produce objects that can belong to an user
+user.new(name: "eric")
+implemented in our classes allow us to associate a song object directly to an artist object:
+writes the methods
+so that we can do crud
+
+
+practice the labs !!!!!!!!!!!!!!!!!!!!!!!! 
+
+
+
+###eric = User.First
+
+###eric.reviews
+
+###eric.doctors
+
+connects our Ruby program to our database
