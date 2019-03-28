@@ -4,13 +4,21 @@ belongs_to :doctor
 
 #
 
+# def self.read_doc_review
+# insta = Doctor.find_by(name: doctor_name)
+# puts insta.inspect
+#
+
+
+
+
 def self.update_doc_review
 
 # insta = Doctor.select(name: doctor_name)
 # Review.where(:doctor_id => [insta.id]).update_all(name: new_doctor_name.id)
 # end
 
-  puts "Amazing, now what doctor id would you like to update"
+  puts "Amazing, now what doctor review by id would you like to update"
   docs_id = gets.chomp.to_i
 
   Review.find_by(doctor_id:docs_id)
@@ -45,10 +53,21 @@ end
 def self.delete_doc_review
 # insta = Doctor.select(name: doctor_name)
 # Review.where(doctor_id: insta.id)
-puts "Beautiful, now what doc id would you like to delete"
+puts "Beautiful, now what doctor review by id would you like to delete"
 delete_doc_id = gets.chomp.to_i
   Review.delete(delete_doc_id)
   puts "Congratulations, doctor has been deleted, cheers "
+
+
+
+
+
+
+
+
+
+
+
 
 
 

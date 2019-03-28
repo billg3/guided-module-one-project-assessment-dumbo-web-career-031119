@@ -9,9 +9,11 @@ class Doctor < ActiveRecord::Base
 
 ##read
 
-def self.read_doc_review(doctor_name)
+def self.read_doc(doctor_name)
 insta = Doctor.find_by(name: doctor_name)
 puts insta.inspect
+
+
 # binding.pry
 # revinsta = Review.where(doctor_id: insta.id)
 
